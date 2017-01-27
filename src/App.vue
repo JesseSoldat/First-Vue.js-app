@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <test></test>
+    <test v-bind:msg="msg"></test>
   </div>
 </template>
 
@@ -10,6 +10,11 @@ import Test from './components/test'
 
 export default {
   name: 'app',
+  data (){
+    return {
+      msg: 'This is a message from your friendly test component'
+    }
+  },
   components: {
     Test
   }
