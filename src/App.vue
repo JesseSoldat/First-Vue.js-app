@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <test v-bind:msg="msg"></test>
+    <!-- <test v-bind:msg="msg"></test> -->
+    <users></users>
   </div>
 </template>
 
 <script>
 
-import Test from './components/test'
+import Test from './components/test';
+import Users from './components/users';
 
 export default {
   name: 'app',
@@ -16,7 +18,7 @@ export default {
     }
   },
   components: {
-    Test
+    Test, Users
   }
 }
 </script>
